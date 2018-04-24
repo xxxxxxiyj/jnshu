@@ -22,7 +22,7 @@ body{
 	cursor:pointer;
 }
 .header{
-	width:110px;
+	width:125px;
 	position:fixed;
 	top:20%;
 	left:50%;
@@ -30,7 +30,7 @@ body{
 }
 .intro{
 	position:fixed;
-	top:45%;
+	top:38%;
 	margin:0 15%;
 	line-height: 1.5em;
 }
@@ -46,7 +46,7 @@ body{
 	padding:0 15%;
 	overflow: auto;
 	position:fixed;
-	bottom:20%;
+	bottom:25%;
 }
 .item{
 	text-align:center;
