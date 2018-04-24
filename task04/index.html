@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>常见的移动端页面</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+			font-family:'Microsoft Yahei';
+		}
+
+		/* 设置placeholder字体 */
+		::-webkit-input-placeholder{/* webkit */
+		    font-weight:normal;
+		}
+		::-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+			font-weight:normal;
+		}
+		::-moz-placeholder{ /* Mozilla Firefox 19+ */
+			font-weight:normal;
+		}
+		::-ms-input-placeholder{ /* IE 10+ */
+			font-weight:normal;
+		}
+
+		body{
+			letter-spacing: 0.1rem;
+			background-color:#eef0f4;
+		}
+		.header{
+			width:100%;
+			height:50px;
+			line-height:50px;
+			background-color:#5ac0ce;
+			color:#fff;
+			text-align:center;
+			position:relative;
+		}
+		.login{
+			font-size:1.2rem;
+			font-weight: 700;
+		}
+		.signin{
+			position:fixed;
+			left:1rem;
+			top:0;
+		}
+		.close{
+			position:fixed;
+			top:0;
+			right:1rem;
+		}
+		.row{
+			width:100%;
+			padding:8px 0;
+			background-color:#fff;
+			margin:10px 0;
+			display: flex;
+			justify-content: left;
+		}
+		.icon{
+			font-size: 0;
+			padding:0 15px;
+			line-height:30px;
+		}
+		.icon img{
+			width:15px;
+			vertical-align: middle;
+		}
+		input{
+			border:none;
+			outline:none;
+			border-left:1px solid #dbdbdb;
+			padding:0 15px;
+			width:70%;
+			font-weight:600;
+		}
+
+		/* input聚焦时隐藏placeholder */
+		/*input:focus::-webkit-input-placeholder{
+		    color:transparent;
+		}*/
+		
+		.login-btn{
+			width:100%;
+			border:none;
+			background-color:#5ac0ce;
+			color:#fff;
+			padding:15px 0;
+			letter-spacing:1rem;
+			font-weight:600;
+			font-size:1rem;
+		}
+		.forget-password{
+			position:relative;
+			font-size:0.85rem;
+		}
+		.forget-password a{
+			position:absolute;
+			right:1em;
+			top:1em;
+			color:#5ac0ce;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="login">登录</div>
+		<div class="signin">注册</div>
+		<div class="close">关闭</div>
+	</div>
+	<form action="">
+		<div class="row">
+			<label class="icon">
+				<img src="images/phone_03.png">
+			</label>
+			<input type="text" placeholder="请输入手机号">
+		</div>
+
+		<div class="row">
+			<label class="icon">
+				<img src="images/lock_06.png">
+			</label>
+			<input type="password" placeholder="请输入密码">
+		</div>
+
+		<button class="login-btn">登录</button>
+
+		<div class="forget-password">
+			<a href="#">忘记密码</a>
+		</div>
+	</form>
+</body>
+</html>
