@@ -15,7 +15,7 @@
 ::-moz-placeholder{ /* Mozilla Firefox 19+ */
 	font-weight:normal;
 }
-::-ms-input-placeholder{ /* IE 10+ */
+:-ms-input-placeholder{ /* IE 10+ */
 	font-weight:normal;
 }
 
@@ -80,6 +80,7 @@ input{
 .login-btn{
 	width:100%;
 	border:none;
+	outline:none;
 	background-color:#5ac0ce;
 	color:#fff;
 	padding:15px 0;
