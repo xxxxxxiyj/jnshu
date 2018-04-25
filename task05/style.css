@@ -8,6 +8,7 @@ body{
 	font-size:14px;
 	font-family:'Microsoft Yahei';
 	letter-spacing: 0.1em;
+	min-width:300px;
 }
 header{
 	position:fixed;
@@ -39,8 +40,12 @@ main{
 	margin-top:60px;
 	margin-bottom:70px;
 	position:absolute;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling:touch;
+}
+@media screen (max-width:720px) {
+	main{
+		overflow-y:scroll;
+		-webkit-overflow-scrolling:touch;
+	}
 }
 .banner{
 	width:100%;
