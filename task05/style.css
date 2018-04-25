@@ -16,17 +16,22 @@ header{
 	height:60px;
 	background-color:#5ac0ce;
 	color:#fff;
-	display:flex;
-	-webkit-display:flex;
-	align-items: center;
-	justify-content: center;
+	text-align:center;
 	z-index:999;
 }
-header .icon-back{
-	width:12px;
+header h2{
 	position:absolute;
-	left:1rem;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+header .icon-back{
+	width:12px;	
+	left:1rem;	
 	cursor:pointer;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
 }
 
 main{
