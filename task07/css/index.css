@@ -1,0 +1,100 @@
+body {
+	font-family: "Microsoft Yahei";
+	font-size: 3rem;
+	background-color: #f0f0f0;
+}
+
+/* header */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 85px;
+	background-color: #29bde0;
+	z-index: 999;
+}
+header img {
+	position: absolute;
+	top: 28px;
+	left: 20px;
+}
+
+/* container */
+.container {
+	margin-top: 115px;
+	margin-bottom: 60px;
+	/*margin: 115px 35px 60px 35px;
+	padding: 0;*/
+}
+
+.last-game {
+	position: relative;
+	width: 100%;
+	height: 116px;
+	line-height: 116px;
+	font-size: 3rem;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+	color: #9a9a9a;
+	background-color: #fff;
+}
+.last-game img {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+.choice {
+	margin-top: 25px;
+	width: 100%;
+	border: 1px solid #c9c9c9;
+	background-color: #fff;
+}
+.title {
+	height: 90px;
+	line-height: 90px;
+	border-bottom: 1px solid #fbb435;
+	text-align: center;
+	color: #fbb435;
+}
+.version {
+	position: relative;
+	overflow: hidden;
+}
+.triangle {
+	position: absolute;
+	top: 41%;
+	right: 55px;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid #fbb435;
+}
+.version-item {
+	position: relative;
+	margin: 28px auto;
+	width: 463px;
+	height: 135px;
+	line-height: 135px;
+	text-align: center;
+	color: #fff;
+	background-color: #69d1e9;
+}
+.version > p{
+	text-align: center;
+}
+
+.page {
+	text-align: center;
+}
+.page-item {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+}
+.active {
+	background-color: #69d1e9;
+}
+
