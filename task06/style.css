@@ -1,0 +1,173 @@
+body {
+	font-family: 'Miscrosoft Yahei';
+	font-size: 16px;
+	color: #999;
+}
+/* header */
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #5fc0cd;
+	font-size: 1.6rem;
+	z-index: 999;
+}
+.topbar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 8px;
+	background-color: #55a8b3;
+	transform: translate(-50%, -50%);
+}
+.nav-pills > li > a {
+	border-radius: 8px;
+	color: #fff;
+}
+.nav-pills .active a {
+	color: #5fc0cd !important;
+	background-color: #fff !important;
+}
+.header img {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	width: 30px;
+}
+
+/* select */
+.select {
+	position: fixed;
+	top: 70px;
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #e1e5e7;
+	background: #fff;
+	z-index: 998;
+}
+.select > .row {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+.select-item {
+	position: relative;
+	border-image: linear-gradient(#fff, #e2e6e7, #fff) 4;
+	border-right: 1px solid ;
+	overflow: hidden;  /* 超出部分隐藏 */
+	white-space: nowrap; /* 文字不换行 */
+	text-overflow: ellipsis; /* 超出则...代替 */
+	/*border-right: 1px solid #e1e5e7;*/
+}
+.select-item:nth-child(3) {
+	border-right: 0;
+}
+.select-item img{
+	position: absolute;
+	top: 45%;
+	right: 10px;
+	width: 8px;
+}
+
+/* main-content */
+.container {
+	margin: 115px 0 70px 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+.main-item {
+	width: 100%;
+	height: 95px;
+}
+.main-item .row {
+	padding-left: 15px;
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+	border-bottom: 1px solid #e1e5e7;
+}
+.main-item .con-item {
+	position: relative;
+	height: 95px;
+}
+.content,
+.pri-de{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.content {
+	overflow: hidden;  /* 超出部分隐藏 */
+	white-space: nowrap; /* 文字不换行 */
+	text-overflow: ellipsis; /* 超出则...代替 */
+}
+.content > * {
+	padding-left: 20px;
+}
+.calendar {
+	background: url('images/task5-2_12.png') no-repeat;
+	background-position: 0 center;
+}
+.time {
+	margin: 5px auto;
+	color: #000;
+}
+.address {
+	background: url('images/Shape5.png') no-repeat;
+	background-position: 1px center;
+}
+.pri-de {
+	position: absolute;
+    right: 15px;
+}
+.pri-de > * {
+	display: inline-block;
+}
+.price {
+	color: #e63b0e;
+}
+.details img{
+	height: 20px;
+}
+
+/* tabbar */
+.tabbar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #f8fafb;
+}
+.tabbar > .btn-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tabbar > .btn-group > * {
+	display: inline-block;
+}
+.tabbar .info {
+	font-size: 14px;
+}
+.btn-home,
+.btn-self {
+	text-align: center;
+}
+.btn-home > img,
+.btn-self > img {
+	width: 30px;
+}
+.btn-edit > img {
+	width: 63px;
+}
+.btn-edit {
+	margin: 0 30px;
+}
